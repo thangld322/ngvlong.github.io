@@ -8,6 +8,6 @@ branches:
         - master
 
 install:
-    - gem install jekyll
+    # - gem install jekyll
     - bundle install
     - bundle exec jekyll build
