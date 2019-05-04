@@ -8,14 +8,7 @@ branches:
         - master
 
 install:
-    # - gem install jekyll
     - bundle version
-    # - gem install pygments.rb
-    # - gem install jekyll
-    # - gem install jekyll-feed
-    # - gem install tzinfo-data
-    # - gem install jekyll-paginate
-    # - gem install jekyll-sitemap
-    # - gem install jekyll-seo-tag
     - bundle install
-    - bundle exec jekyll build
+    - bundle exec jekyll serve
+    - curl localhost:4000
