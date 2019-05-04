@@ -10,5 +10,6 @@ branches:
 install:
     # - gem install jekyll
     - bundle version
+    - gem install jekyll
     - bundle install
     - bundle exec jekyll build
