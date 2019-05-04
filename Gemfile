@@ -10,6 +10,7 @@
 # Happy Jekylling!
 # gem "jekyll", "~> 3.6.2"
 gem 'jekyll', '~> 3.8', '>= 3.8.5'
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
 
@@ -19,11 +20,18 @@ gem 'jekyll', '~> 3.8', '>= 3.8.5'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  # gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-feed', '~> 0.12.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
-gem 'jekyll-seo-tag'
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', '~> 1.2019', '>= 1.2019.1'
+gem 'jekyll-paginate', '~> 1.1'
+gem 'jekyll-sitemap', '~> 1.3', '>= 1.3.1'
+gem 'jekyll-seo-tag', '~> 2.6'
+gem 'rake', '~> 12.3', '>= 12.3.2'
+
+# gem 'jekyll-paginate'
+# gem 'jekyll-sitemap'
+# gem 'jekyll-seo-tag'

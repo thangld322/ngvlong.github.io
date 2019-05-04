@@ -10,11 +10,11 @@ branches:
 install:
     # - gem install jekyll
     - bundle version
-    - gem install jekyll
-    - gem install jekyll-feed
-    - gem install tzinfo-data
-    - gem install jekyll-paginate
-    - gem install jekyll-sitemap
-    - gem install jekyll-seo-tag
+    # - gem install jekyll
+    # - gem install jekyll-feed
+    # - gem install tzinfo-data
+    # - gem install jekyll-paginate
+    # - gem install jekyll-sitemap
+    # - gem install jekyll-seo-tag
     - bundle install
     - bundle exec jekyll build
