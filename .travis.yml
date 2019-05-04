@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+    - 2.5.3
+
+branches:
+    only:
+        - dev
+        - master
+
+install:
+    - bundle version
+    - bundle install
+    - bundle exec jekyll build
+    # - bundle exec jekyll serve
+    # - curl localhost:4000
