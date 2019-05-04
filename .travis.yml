@@ -10,5 +10,6 @@ branches:
 install:
     - bundle version
     - bundle install
-    - bundle exec jekyll serve
-    - curl localhost:4000
+    - bundle exec jekyll build
+    # - bundle exec jekyll serve
+    # - curl localhost:4000
