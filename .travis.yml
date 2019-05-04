@@ -10,7 +10,7 @@ branches:
 install:
     # - gem install jekyll
     - bundle version
-    - gem install pygments.rb
+    # - gem install pygments.rb
     # - gem install jekyll
     # - gem install jekyll-feed
     # - gem install tzinfo-data
