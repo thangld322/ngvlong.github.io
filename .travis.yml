@@ -5,7 +5,7 @@ rvm:
 branches:
     only:
         - dev
-        - master
+        # - master
 
 install:
     - bundle version
