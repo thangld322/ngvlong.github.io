@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Xây dựng hệ thống ELK trong 15 phút"
+date: 2019-05-05 00:00:00.000000000 +07:00
 author: "Long Tom"
-categories: 
-- Tutorials
 type: post
 published: true
 status: publish
+categories: 
+- Tutorials
 tags:
 - elk
 - logstash
