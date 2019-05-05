@@ -2,9 +2,19 @@
 layout: post
 title: "Xây dựng hệ thống ELK trong 15 phút"
 author: "Long Tom"
-categories: journal
-tags: [documentation,elk,tutorial]
-# image: cutting.jpg
+categories: 
+- Tutorials
+type: post
+published: true
+status: publish
+tags:
+- elk
+- logstash
+- elastic
+- elasticsearch
+- kibana
+excerpt: "Tôi trình bày một cách đơn giản để dựng 1 hệ thống ELK."
+
 ---
 
 Sau đây tôi trình bày một cách đơn giản để dựng 1 hệ thống ELK. Tất cả mã nguồn của ví dụ, bạn có thể tải trên [Github](https://github.com/ngvlong/elk-started) của tôi.
