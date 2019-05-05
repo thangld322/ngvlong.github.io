@@ -17,8 +17,32 @@
   Base
 */
 
+@font-face {
+  font-family: "Georgia";
+  src: url('fonts/georgia.ttf') format('truetype');
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url('fonts/georgia-italic.ttf') format('truetype');
+  font-display: fallback;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url('fonts/georgia-bold.ttf') format('truetype');
+  font-display: fallback;
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", sans-serif, serif;
   font-size: 18px;
   color: #515151;
   line-height: 1.75rem;
