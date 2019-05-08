@@ -17,33 +17,8 @@
   Base
 */
 
-/* @font-face {
-  font-family: "Georgia";
-  src: url('fonts/georgia.ttf') format('truetype');
-  font-display: fallback;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Georgia";
-  src: url('fonts/georgia-italic.ttf') format('truetype');
-  font-display: fallback;
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Georgia";
-  src: url('fonts/georgia-bold.ttf') format('truetype');
-  font-display: fallback;
-  font-weight: bold;
-  font-style: normal;
-} */
-
 body {
-  /* font-family: "PT Serif", Georgia, "Times New Roman", sans-serif, serif; */
-  font-family: "Roboto" , "Times New Roman", sans-serif, serif;
+  font-family: "Roboto", "PT Serif", "Times New Roman", sans-serif, serif;
   font-size: 18px;
   color: #515151;
   line-height: 1.75rem;
@@ -69,7 +44,7 @@ h1 a {
 
 h1, h2, h3, h4, h5, h6 {
   /* font-family: "Quattrocento Sans", sans-serif; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Quattrocento Sans", sans-serif;
   color: #333;
 }
 
@@ -208,7 +183,7 @@ hr {
 
 .pagination {
   overflow: hidden;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Roboto', 'Quattrocento Sans', sans-serif;
   text-align: center;
 }
 
