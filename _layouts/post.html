@@ -6,9 +6,35 @@ layout: default
   {{ page.title }}
 </h1>
 
-{% if page.image %}
-  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+<!-- {% if page.categories.size > 0 %}
+    {% capture categories_content %} {% endcapture %}
+    {% for tag in page.categories %}
+	    {% assign ttag = tag[0] %}
+         {% capture categories_content_temp %}{{ categories_content }} <a class="category-label">{{ tag }}</a> {% endcapture %}
+        {% assign categories_content = categories_content_temp %}
+	{% endfor %}
+	
 {% endif %}
+
+{% if page.tags.size > 0 %}
+    {% capture tags_content %} {% endcapture %}
+    {% for tag in page.tags %}
+	    {% assign ttag = tag[0] %}
+         {% capture tags_content_temp %}{{ tags_content }} <a class="show-tags">{{ tag }}</a>{% if forloop.last == false %}, {% endif %} {% endcapture %}
+        {% assign tags_content = tags_content_temp %}
+	{% endfor %}
+	
+{% endif %}
+<p class="font-italic">
+  {% if categories_content %}
+      
+      <small>Posted in</small> <span >{{ categories_content }}</span><small> with </small>  
+    
+  {% endif %}
+  {% if page.tags.size > 0 %}
+      <small>{{ tags_content }}</small>
+  {% endif %}
+</p> -->
 
 {{ content }}
 
