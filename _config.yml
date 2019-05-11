@@ -22,8 +22,9 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Long Tom'
 description:	       'Software Engineer'
-author:              'Long Tom'
+author:              'Long and Colleague'
+summary:              '"If you want to go fast, go alone. If you want to go far, go together"'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
+# feed:
 #  path: rss-feed.xml

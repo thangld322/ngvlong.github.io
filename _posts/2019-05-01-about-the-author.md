@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "About the Author"
+date: 2019-05-01 12:00:00.000000000 +07:00
 author: "Long Tom"
-categories: journal
-tags: [documentation,sample]
-image: cutting.jpg
+type: post
+published: true
+status: publish
+categories: Home
+# tags: []
+# image: cutting.jpg
 ---
 
 Hi there! I'm Long.
