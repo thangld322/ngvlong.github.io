@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thu thập Log với Filebeat"
-date: 2019-05-05 10:00:00.000000000 +07:00
+date: 2019-05-10 12:00:00.000000000 +07:00
 author: "Long Tom"
 type: post
 published: true
