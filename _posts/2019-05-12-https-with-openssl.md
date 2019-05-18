@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cấu hình HTTPS cho Nginxs"
+title: "Cấu hình HTTPS cho Nginx"
 date: 2019-05-12 12:00:00.000000000 +07:00
 author: "Long Tom"
 type: post
