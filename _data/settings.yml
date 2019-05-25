@@ -34,11 +34,11 @@ pagination:
   next_page: 'Mới hơn'
   previous_page: 'Cũ hơn'
 
-sharing_button_prompt: 'Feel free to share!'
+sharing_button_prompt: 'Chia sẻ với bạn bè!'
 
 related_posts: 'You may also enjoy:'
 
-post_date_prefix: 'Written on'
+post_date_prefix: 'Viết vào'
  
 # pagination:
 #   next_page: 'Mới hơn'
