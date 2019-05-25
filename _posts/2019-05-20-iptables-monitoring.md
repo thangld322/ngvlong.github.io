@@ -12,7 +12,7 @@ tags:
 - logstash
 - filter
 - plugin
-excerpt: "Khi cài đặt một hệ thống, đặc biệt các hệ thống ngoài Internet, tôi luôn phải cấu hình iptables cẩn thận để hạn chế các kết nối ngoài ý muốn. Đôi khi xem log này, tôi thấy có rất nhiều kết nối bị chặn nhưng để phân tích thì thật khó khăn. Vì vậy, tôi cấu hình đây log này về Logstash."
+excerpt: "Khi cài đặt một hệ thống, đặc biệt các hệ thống ngoài Internet, tôi luôn phải cấu hình iptables cẩn thận để hạn chế các kết nối ngoài ý muốn. Đôi khi xem log này, tôi thấy có rất nhiều kết nối bị chặn nhưng để phân tích thì thật khó khăn. Vì vậy, tôi cấu hình đẩy log này về Logstash."
 ---
 
 Bài này, tôi trình bày về việc phân tích log iptables sử dụng plugin logstash-filter-kv.
