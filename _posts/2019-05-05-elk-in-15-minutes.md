@@ -14,6 +14,8 @@ tags:
 - elastic
 - elasticsearch
 - kibana
+- docker
+- docker-compose
 excerpt: "Xây dựng hệ thống Elastic Search, Logstash và Kibana sử dụng Docker, Docker-compose."
 
 ---
