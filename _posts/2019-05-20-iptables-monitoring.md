@@ -49,9 +49,9 @@ service rsyslog restart
 ## Sử dụng Kv trong Logstash
 
 Thêm đoạn cấu hình vào phần filter trong file cấu hình logstash
+
 ```bash
     kv {
-        
     }
 ```
 
@@ -62,10 +62,3 @@ Truy cập vào Kibana, ta sẽ thấy log được phân tích ra các trườn
 Xem chi tiết 1 bản ghi, kết quả như sau
 
 ![Iptables Detail]( {{site.url}}/assets/img/2019/05/20/Iptables_Json.png)
-
-
-
-
-
-
-
