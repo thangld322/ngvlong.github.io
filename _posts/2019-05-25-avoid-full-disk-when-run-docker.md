@@ -7,7 +7,7 @@ type: post
 published: true
 status: publish
 categories: 
-- Docker
+- Tutorials
 tags:
 - docker
 - logging
