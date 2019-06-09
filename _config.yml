@@ -11,6 +11,11 @@
 #   sort_reverse: true
 
 # jekyll-paginate configuration
+baseurl: ""
+url: "https://ngvlong.com"
+site.github.url: "https://github.com/ngvlongit1/ngvlongit1.github.io"
+github_username: ngvlongit1
+publish: true
 paginate:            5
 
 # Build settings
