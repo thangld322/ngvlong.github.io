@@ -13,10 +13,10 @@ tags:
 - http
 - openssl
 - nginx
-excerpt: "Sử dụng OpenSSL tạo cert để cấu hình HTTPS cho Nginx."
+excerpt: "Tôi trình bày cách sử dụng OpenSSL tạo chứng thư số để cấu hình HTTPS cho Nginx."
 ---
 
-Sau đây tôi giới thiệu cách sử dụng OpenSSL tự tạo cert để cấu hình HTTPS cho Nginx.
+Sau đây tôi giới thiệu cách sử dụng OpenSSL tự tạo chứng thư số để cấu hình HTTPS cho Nginx.
 
 ## Cài đặt
 
@@ -69,9 +69,9 @@ server {
 }
 ```
 
-Ở đây ta thấy có ssl_certificate, ssl_certificate_key, ssl_dhparam, ssl_trusted_certificate cần phải cấu hình. Tôi sử dụng cert tự sinh nên bỏ qua ssl_trusted_certificate và chỉ cấu hình cho 3 file còn lại.
+Ở đây ta thấy có ssl_certificate, ssl_certificate_key, ssl_dhparam, ssl_trusted_certificate cần phải cấu hình. Tôi sử dụng chứng thư số tự sinh nên bỏ qua ssl_trusted_certificate và chỉ cấu hình cho 3 file còn lại.
 
-Để sinh cặp cert và key cho server tôi dùng OpenSSL. Mặc dù có thể chạy lệnh
+Để sinh cặp chứng thư số và khoá bí mật cho server tôi dùng OpenSSL. Mặc dù có thể chạy lệnh
 
 ```bash
 openssl req -newkey rsa:2048 -nodes -keyout ngvlong.com.key -x509 -days 365 -out ngvlong.com.crt
@@ -83,7 +83,7 @@ rồi khi terminal hiện lên mấy câu hỏi, chỉ việc trả lời hoặc
 openssl req -batch -newkey rsa:2048 -nodes -keyout ngvlong.com.key -x509 -days 365 -out ngvlong.com.crt -subj '/CN=ngvlong.com/O=Long Tom/C=VN'
 ```
 
-Sau khi có cặp cert và key, tôi cần tạo file ssl_dhparam. Sử dụng lệnh sau để tạo nhanh file này
+Sau đó, tôi cần tạo file ssl_dhparam. Sử dụng lệnh sau để tạo nhanh file này
 
 ```bash
 openssl dhparam -dsaparam -out ngvlong.com.pem 4096
@@ -121,4 +121,4 @@ Sau khi cấu hình DNS (hoặc sửa file hosts), truy cập vào <http://ngvlo
 
 ## Kết luận
 
-Như vậy, tôi đã cấu hình xong https cho nginx với cert tự tạo. Để trình duyệt không cảnh báo (hiển thị màu xanh trông chuyên nghiệp) thì bạn nên mua cert cho website của mình, hoặc cũng có thể chọn giải pháp dùng cert miễn phí từ [Comodo](https://ssl.comodo.com/free-ssl-certificate.php), [SSL For Free](https://www.sslforfree.com/) hoặc [Let's Encrypt](https://letsencrypt.org/).
+Như vậy, tôi đã cấu hình xong Https cho Nginx với chứng thư số tự tạo. Để trình duyệt không cảnh báo (hiển thị màu xanh trông chuyên nghiệp) thì bạn nên mua chứng thư số cho website của mình, hoặc cũng có thể chọn giải pháp miễn phí từ [Comodo](https://ssl.comodo.com/free-ssl-certificate.php), [SSL For Free](https://www.sslforfree.com/) hoặc [Let's Encrypt](https://letsencrypt.org/).
