@@ -101,7 +101,7 @@ Khi sử dụng Kafka, có 1 số khái niệm cơ bản cần biết như sau:
 
 * Partition: Mỗi Topic có thể được chia thành nhiều partition (như ví dụ trên của tôi là 3). Mỗi Partition lưu trữ các thông điệp theo một thứ tự không đổi.
 
-* Producer: Ứng dụng ghi dữ liệu và Kafka
+* Producer: Ứng dụng ghi dữ liệu vào Kafka
 
 * Consumer: Ứng dụng đọc dữ liệu từ kafka. Nếu bạn có nhiều Consumer cùng đọc vào 1 topic trong kafka, thì chúng sẽ phân biệt với nhau bởi group_id. Các ứng dụng khác nhau phải có group_id khác nhau, ngược lại các Consumer của cùng 1 ứng dụng (xử lý song song, phân tán) thì phải có group_id giống nhau.
 
@@ -142,3 +142,13 @@ Dưới đây là 1 số lệnh tôi hay phải dùng khi làm việc với kafk
 ```/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kafka01:9092 --describe --group <group>```
 
 > Lệnh này rất hữu ích trong việc xem việc xử lý của Consumer có kịp so với tốc độ ghi vào của Producer không thông quá giá trị LAG.
+
+### Xoá 1 group
+
+```/opt/kafka/bin/kafka-consumer-groups.sh --bootstrap-server kafka01:9092 --delete --group <group>```
+
+> Việc xoá group chỉ thực hiện được trong trường hợp group đó là inactive (nghĩa là các consumer có group_id đó đang không hoạt động)
+
+## Kết luận
+
+Hi vọng với bài viết trên bạn sẽ cài đặt được 1 cluster kafka cho hệ thống của mình. Như phía trên tôi có trình bày, việc scale Kafka khá dễ dàng, ở bài sau tôi sẽ trình bày cách thêm/bớt Node kafka mà không làm gián đoạn hoạt động của hệ thống, mời các bạn đón đọc.
