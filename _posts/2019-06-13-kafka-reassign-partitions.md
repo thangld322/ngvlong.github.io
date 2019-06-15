@@ -17,7 +17,7 @@ excerpt: "Để đáp ứng được lượng dữ liệu đầu vào ngày mộ
 
 ## Giới thiệu
 
-Hệ thống của tôi đang chạy ổn định, tuy nhiên ngày càng nhiều dữ liệu được đẩy vào, Cluster Kafka hiện tại có vẻ không còn đáp ứng được tốc độ đọc/ghi dữ liệu của Producers/Consumers. Để giải quyết việc này, tôi thêm các Node Kafka vào Cluster hiện tại, vâns đề đặt ra là làm thế nào để sau khi thêm việc đọc/ghi được san tải sang các Node mới này? Có một cách là xoá hết các topic đi rồi tạo lại nhưng nó sẽ làm mất dữ liệu hiện thời, các phần chưa được xử lý sẽ mất. Có một cách hay hơn để giải quyết việc này mà không ảnh hưởng gì đến hệ thống đang chạy là sử dụng Kafka Reassign Partitions.
+Hệ thống của tôi đang chạy ổn định, tuy nhiên ngày càng nhiều dữ liệu được đẩy vào, Cluster Kafka hiện tại có vẻ không còn đáp ứng được tốc độ đọc/ghi dữ liệu của Producers/Consumers. Để giải quyết việc này, tôi thêm các Node Kafka vào Cluster hiện tại, vấn đề đặt ra là làm thế nào để sau khi thêm việc đọc/ghi được san tải sang các Node mới này? Có một cách là xoá hết các topic đi rồi tạo lại nhưng nó sẽ làm mất dữ liệu hiện thời, các phần chưa được xử lý sẽ mất. Có một cách hay hơn để giải quyết việc này mà không ảnh hưởng gì đến hệ thống đang chạy là sử dụng Kafka Reassign Partitions.
 
 ## Thực hiện
 
