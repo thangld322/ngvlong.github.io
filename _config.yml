@@ -11,6 +11,11 @@
 #   sort_reverse: true
 
 # jekyll-paginate configuration
+baseurl: ""
+url: "https://ngvlong.com"
+site.github.url: "https://github.com/ngvlongit1/ngvlongit1.github.io"
+github_username: ngvlongit1
+publish: true
 paginate:            5
 
 # Build settings
@@ -20,8 +25,8 @@ permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Long Tom'
-description:	       'Software Engineer'
+title:               'Long Tom'
+description:         'Software Engineer'
 author:              'Long and Colleague'
 summary:              '"If you want to go fast, go alone. If you want to go far, go together"'
 
